@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Javascript -->
+    <script src="assets/script/index.js" defer></script>
+    <!-- Page title -->
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <main class="main d-grid">
+      <header class="header d-flex">
+        <a href="index.html"
+          ><img class="nav__logo" src="assets/images/logo.svg" alt=""
+        /></a>
+
+        <nav class="horizontal-nav">
+          <ul class="horizontal-nav__list d-flex">
+            <li class="horizontal-nav__item">
+              <a href="\" class="horizontal-nav__link">Home</a>
+            </li>
+            <li class="horizontal-nav__item">
+              <a href="\" class="horizontal-nav__link">New</a>
+            </li>
+            <li class="horizontal-nav__item">
+              <a href="\" class="horizontal-nav__link">Popular</a>
+            </li>
+            <li class="horizontal-nav__item">
+              <a href="\" class="horizontal-nav__link">Trending</a>
+            </li>
+            <li class="horizontal-nav__item">
+              <a href="\" class="horizontal-nav__link">Categories</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="vertical-nav">
+          <ul class="vertical-nav__wrapper d-grid">
+            <li class="hamburger open active">
+              <img src="assets/images/icon-menu.svg" alt="menu hamburger" />
+            </li>
+            <li class="hamburger close">
+              <img src="assets/images/icon-menu-close.svg" alt="" />
+            </li>
+
+            <li class="vertical-nav__menu">
+              <ul class="vertical-nav__list">
+                <li class="vertical-nav__item">
+                  <a href="\" class="vertical-nav__link">Home</a>
+                </li>
+                <li class="vertical-nav__item">
+                  <a href="\" class="vertical-nav__link">New</a>
+                </li>
+                <li class="vertical-nav__item">
+                  <a href="\" class="vertical-nav__link">Popular</a>
+                </li>
+                <li class="vertical-nav__item">
+                  <a href="\" class="vertical-nav__link">Trending</a>
+                </li>
+                <li class="vertical-nav__item">
+                  <a href="\" class="vertical-nav__link">Categories</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="backdrop"></div>
+      </header>
+      <div class="grid-container d-grid">
+        <picture class="hero__image">
+          <source
+            srcset="assets/images/image-web-3-desktop.jpg"
+            media="(min-width: 650px)"
+          />
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt="A schematic of web 3"
+          />
+        </picture>
+
+        <div class="hero__content d-grid">
+          <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
+          <div class="wrapper flow-content">
+            <p class="hero__intro">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="\" class="hero__btn">Read more</a>
+          </div>
+        </div>
+
+        <aside class="aside d-grid">
+          <h2 class="aside__header">New</h2>
+          <ul class="aside__articles d-grid">
+            <li class="aside__article d-grid">
+              <a href="\" class="aside__article__title"
+                >Hydrogen VS Electric Cars</a
+              >
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+            <li class="aside__article d-grid">
+              <a href="\" class="aside__article__title">
+                The Downsides of AI Artistry
+              </a>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </li>
+            <li class="aside__article d-grid">
+              <a href="\" class="aside__article__title"
+                >Is VC Funding Drying Up?</a
+              >
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </li>
+          </ul>
+        </aside>
+        <article>
+          <ul class="featured-articles d-grid">
+            <li class="d-flex featured-article">
+              <img
+                class="featured-article__image"
+                src="/assets/images/image-retro-pcs.jpg"
+                alt="Retro PCs"
+              />
+              <div class="d-grid featured-article__text">
+                <h3>01</h3>
+                <a href="\" class="featured-article__link">Reviving Retro</a>
+                <p>PCs What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </li>
+            <li class="d-flex featured-article">
+              <img
+                class="featured-article__image"
+                src="/assets/images/image-top-laptops.jpg"
+                alt="modern laptops"
+              />
+              <div class="d-grid featured-article__text">
+                <h3>02</h3>
+                <a href="\" class="featured-article__link"
+                  >Top 10 Laptops of 2022</a
+                >
+                <p>Our best picks for various needs and budgets.</p>
+              </div>
+            </li>
+            <li class="d-flex featured-article">
+              <img
+                class="featured-article__image"
+                src="/assets/images/image-gaming-growth.jpg"
+                alt="A hand tossing game pad in the air"
+              />
+              <div class="d-grid featured-article__text">
+                <h3>03</h3>
+                <a href="\" class="featured-article__link"
+                  >The Growth of Gaming</a
+                >
+                <p>How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">call4julius@gmail.com</a>.
+      </div>
+    </main>
+  </body>
+</html>
