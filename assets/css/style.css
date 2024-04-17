@@ -119,7 +119,7 @@ ol[class] {
   }
 
   .hero__content {
-    margin-top: auto;
+    align-items: end;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
 
