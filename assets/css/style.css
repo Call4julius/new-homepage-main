@@ -108,8 +108,7 @@ ol[class] {
 }
 
 .grid-container {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(400px, 15%) 1fr auto;
+  grid-template: minmax(15%, 400px) 1fr auto / repeat(3, 1fr);
   gap: var(--spacer-150);
 
   .hero__image {
@@ -260,7 +259,7 @@ body {
   justify-content: space-between;
 
   .nav__logo {
-    width: max(calc(var(--spacer-200) * 1.75), 4.5vw);
+    width: clamp(5ch, 4.5vw, 15ch);
   }
 }
 
